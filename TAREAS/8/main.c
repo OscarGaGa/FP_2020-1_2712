@@ -3,7 +3,7 @@
 #include<math.h>
 int main(int argc, char *argu[])
 {
-	float x, y, z;
+	double x, y, z;
 	x=atof(argu[1]);
 	y=atof(argu[2]);
 	
