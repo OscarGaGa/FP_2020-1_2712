@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<math.h>
 int main(int argc, char *argu[]){
-	int numeros[argc-1];
+	int numeros[argc-1];//lista numeros enteros
 	int i=0, j=1, numero;
 	while(i<argc-1){
 		numero=atoi(argu[j]);
@@ -13,10 +13,10 @@ int main(int argc, char *argu[]){
 	int temporal;
 	for(i=1; j<argc-1; i++){
 		for(j=0; j<argc-1-i; j++){
-			if(numeros[j]>numeros[j+1]){
+			if(numeros[j]>numeros[j+1]){//de menor a mayor comparando dos numeros
 				temporal=numeros[j];
-				numeros[j]=numeros[j+1];
-				numeros[j+1]=temporal;
+				numeros[j]=numeros[j+1];//retrocede
+				numeros[j+1]=temporal;//se guarda en el siguiente temporal
 			}
 		}
 	}
